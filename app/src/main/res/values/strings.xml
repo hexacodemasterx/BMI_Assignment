@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="history">History</string>
+    <string name="open_map">Find Medical Attention</string>
+    <string-array name="height_units">
+        <item>Meters(m)</item>
+        <item>Centimeters(cm)</item>
+    </string-array>
+    <string-array name="weight_units">
+        <item>Kilograms(Kg)</item>
+        <item>Pound(Ib)</item>
+    </string-array>
+</resources>

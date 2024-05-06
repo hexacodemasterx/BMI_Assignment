@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingBottom="64dp">
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"
+                android:text="History" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:paddingBottom="32dp"
+            android:src="@drawable/bmi"
+            android:layout_weight="1"
+            android:contentDescription="Icon" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textSize="36sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="32dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/heightInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter height"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Spinner
+                android:id="@+id/heightUnitSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:minHeight="48dp"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/weightInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter weight"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Spinner
+                android:id="@+id/weightUnitSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:minHeight="48dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/green"
+                android:text="Calculate"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="32dp"
+                android:text="BMI Result"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/resultImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp" />
+
+            <Button
+                android:id="@+id/btnOpenMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"
+                android:text="@string/open_map"
+                android:layout_marginTop="28dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
